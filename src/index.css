@@ -1,13 +1,71 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+  min-height: 100vh;
+}
+
+.loading,
+.error {
+  text-align: center;
+  margin: 100px auto;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.home form {
+  margin: 50px 0;
+}
+
+.home form input {
+  outline: none;
+  border: 2px solid #c0c0c0;
+  padding: 10px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.home form button {
+  padding: 10px;
+  border-top-right-radius: 7px;
+  border: 2px solid #9893de;
+  border-bottom-right-radius: 7px;
+  background: #9893de;
+  color: #ffffff;
+
+}
+
+.weather-container {
+  width: 20%;
+
+}
+
+.weather-card {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 7px;
+  padding: 20px;
+}
+
+.weather-card img {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.weather-card p {
+  margin: 10px 0;
 }
