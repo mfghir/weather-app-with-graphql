@@ -41,19 +41,19 @@ const Home = () => {
             />
             <h2>{data.getCityByName.name}</h2>
             <p>
-              <strong>Temperature: </strong>
-              {data.getCityByName.weather.temperature.actual}
+              <strong>🌡 Temperature: </strong>
+              {data.getCityByName.weather.temperature.actual.toString().substring(0,2)} °C
             </p>
             <p>
-              <strong>Description: </strong>
+              <strong>☁ Description: </strong>
               {data.getCityByName.weather.summary.description}
             </p>
             <p>
-              <strong>Wind Speed: </strong>
+              <strong>💨 Wind Speed: </strong>
               {data.getCityByName.weather.wind.speed}
             </p>
             <p>
-              <strong>Humidity: </strong>
+              <strong>💧 Humidity:</strong>
               {data.getCityByName.weather.clouds.humidity}
             </p>
           </section>
